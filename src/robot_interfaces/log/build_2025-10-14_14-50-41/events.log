@@ -1,0 +1,393 @@
+[0.000000] (-) TimerEvent: {}
+[0.000771] (robot_interfaces) JobQueued: {'identifier': 'robot_interfaces', 'dependencies': OrderedDict()}
+[0.001318] (robot_interfaces) JobStarted: {'identifier': 'robot_interfaces'}
+[0.019140] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'cmake'}
+[0.020207] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces'], 'cwd': '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'dxf'), ('SSH_CLIENT', '192.168.0.208 59624 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dxf'), ('OLDPWD', '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c375eb70-710d-4062-8682-38344b9d6dbb.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dxf'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/dxf/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9fa59a3d78.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces'), ('SSH_CONNECTION', '192.168.0.208 59624 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099323] (-) TimerEvent: {}
+[0.199978] (-) TimerEvent: {}
+[0.226286] (robot_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300165] (-) TimerEvent: {}
+[0.400895] (-) TimerEvent: {}
+[0.409905] (robot_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.432738] (robot_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.501111] (-) TimerEvent: {}
+[0.601901] (-) TimerEvent: {}
+[0.611802] (robot_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.628341] (robot_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.630652] (robot_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.631149] (robot_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.638535] (robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.702087] (-) TimerEvent: {}
+[0.802782] (-) TimerEvent: {}
+[0.803668] (robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.828533] (robot_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.829449] (robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.831445] (robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.840542] (robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.902929] (-) TimerEvent: {}
+[1.003558] (-) TimerEvent: {}
+[1.104212] (-) TimerEvent: {}
+[1.205073] (robot_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.205555] (-) TimerEvent: {}
+[1.305982] (-) TimerEvent: {}
+[1.406627] (-) TimerEvent: {}
+[1.445970] (robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.454946] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.473752] (robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.506763] (-) TimerEvent: {}
+[1.574502] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.606963] (-) TimerEvent: {}
+[1.646618] (robot_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[1.707142] (-) TimerEvent: {}
+[1.807789] (-) TimerEvent: {}
+[1.908535] (-) TimerEvent: {}
+[2.009196] (-) TimerEvent: {}
+[2.109943] (-) TimerEvent: {}
+[2.210612] (-) TimerEvent: {}
+[2.311367] (-) TimerEvent: {}
+[2.349680] (robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.411560] (-) TimerEvent: {}
+[2.512326] (-) TimerEvent: {}
+[2.613118] (-) TimerEvent: {}
+[2.713858] (-) TimerEvent: {}
+[2.814491] (-) TimerEvent: {}
+[2.915149] (-) TimerEvent: {}
+[2.927265] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.015324] (-) TimerEvent: {}
+[3.116015] (-) TimerEvent: {}
+[3.216824] (-) TimerEvent: {}
+[3.317505] (-) TimerEvent: {}
+[3.418245] (-) TimerEvent: {}
+[3.518898] (-) TimerEvent: {}
+[3.619692] (-) TimerEvent: {}
+[3.671919] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.719855] (-) TimerEvent: {}
+[3.728229] (robot_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.735026] (robot_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.802967] (robot_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.803453] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.803622] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.803763] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[3.819993] (-) TimerEvent: {}
+[3.853671] (robot_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.920164] (-) TimerEvent: {}
+[3.999560] (robot_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.020322] (-) TimerEvent: {}
+[4.093835] (robot_interfaces) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.095805] (robot_interfaces) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces/rosidl_generator_c>;$<BUILD_INTERFACE:/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces/rosidl_typesupport_introspection_cpp>;/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces/rosidl_generator_c;/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces/rosidl_generator_py\n'}
+[4.096174] (robot_interfaces) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.100604] (robot_interfaces) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.106196] (robot_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.109751] (robot_interfaces) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.120442] (-) TimerEvent: {}
+[4.127733] (robot_interfaces) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.128168] (robot_interfaces) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.130987] (robot_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.137493] (robot_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.212145] (robot_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[4.220581] (-) TimerEvent: {}
+[4.235516] (robot_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces\n'}
+[4.253069] (robot_interfaces) CommandEnded: {'returncode': 0}
+[4.254790] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'build'}
+[4.256909] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces', '--', '-j6', '-l6'], 'cwd': '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'dxf'), ('SSH_CLIENT', '192.168.0.208 59624 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dxf'), ('OLDPWD', '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c375eb70-710d-4062-8682-38344b9d6dbb.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dxf'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/dxf/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9fa59a3d78.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces'), ('SSH_CONNECTION', '192.168.0.208 59624 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.320738] (-) TimerEvent: {}
+[4.348387] (robot_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.370133] (robot_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.404574] (robot_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_robot_interfaces\n'}
+[4.420926] (-) TimerEvent: {}
+[4.521726] (-) TimerEvent: {}
+[4.622368] (-) TimerEvent: {}
+[4.722980] (-) TimerEvent: {}
+[4.823595] (-) TimerEvent: {}
+[4.924161] (-) TimerEvent: {}
+[4.927201] (robot_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[4.928861] (robot_interfaces) StdoutLine: {'line': b'creating robot_interfaces.egg-info\n'}
+[4.929313] (robot_interfaces) StdoutLine: {'line': b'writing robot_interfaces.egg-info/PKG-INFO\n'}
+[4.929888] (robot_interfaces) StdoutLine: {'line': b'writing dependency_links to robot_interfaces.egg-info/dependency_links.txt\n'}
+[4.930146] (robot_interfaces) StdoutLine: {'line': b'writing top-level names to robot_interfaces.egg-info/top_level.txt\n'}
+[4.930677] (robot_interfaces) StdoutLine: {'line': b"writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[4.935953] (robot_interfaces) StdoutLine: {'line': b"reading manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[4.937028] (robot_interfaces) StdoutLine: {'line': b"writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[5.017178] (robot_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_robot_interfaces_egg\n'}
+[5.024371] (-) TimerEvent: {}
+[5.088005] (robot_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/set_rgb__functions.c.o\x1b[0m\n'}
+[5.088523] (robot_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/supersonic__functions.c.o\x1b[0m\n'}
+[5.099245] (robot_interfaces) StdoutLine: {'line': b'[ 10%] Built target robot_interfaces__cpp\n'}
+[5.120028] (robot_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.120540] (robot_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.121439] (robot_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.124520] (-) TimerEvent: {}
+[5.229538] (-) TimerEvent: {}
+[5.251881] (robot_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library librobot_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[5.329701] (-) TimerEvent: {}
+[5.337923] (robot_interfaces) StdoutLine: {'line': b'[ 20%] Built target robot_interfaces__rosidl_generator_c\n'}
+[5.362649] (robot_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.366485] (robot_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.366924] (robot_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.429855] (-) TimerEvent: {}
+[5.530496] (-) TimerEvent: {}
+[5.631104] (-) TimerEvent: {}
+[5.731782] (-) TimerEvent: {}
+[5.809078] (robot_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/supersonic__type_support.cpp.o\x1b[0m\n'}
+[5.831954] (-) TimerEvent: {}
+[5.862929] (robot_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/supersonic__type_support.cpp.o\x1b[0m\n'}
+[5.870342] (robot_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/supersonic__type_support.cpp.o\x1b[0m\n'}
+[5.932148] (-) TimerEvent: {}
+[6.032864] (-) TimerEvent: {}
+[6.057759] (robot_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/supersonic__type_support.cpp.o\x1b[0m\n'}
+[6.069492] (robot_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/supersonic__type_support.c.o\x1b[0m\n'}
+[6.121825] (robot_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/supersonic__type_support_c.cpp.o\x1b[0m\n'}
+[6.133059] (-) TimerEvent: {}
+[6.165574] (robot_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/srv/set_rgb__type_support.cpp.o\x1b[0m\n'}
+[6.213003] (robot_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/srv/detail/set_rgb__type_support.c.o\x1b[0m\n'}
+[6.233255] (-) TimerEvent: {}
+[6.323104] (robot_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.333467] (-) TimerEvent: {}
+[6.340577] (robot_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking C shared library librobot_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.433658] (-) TimerEvent: {}
+[6.518784] (robot_interfaces) StdoutLine: {'line': b'[ 53%] Built target robot_interfaces__rosidl_typesupport_introspection_c\n'}
+[6.528188] (robot_interfaces) StdoutLine: {'line': b'[ 53%] Built target robot_interfaces__rosidl_typesupport_c\n'}
+[6.533868] (-) TimerEvent: {}
+[6.552444] (robot_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/set_rgb__type_support_c.cpp.o\x1b[0m\n'}
+[6.557577] (robot_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/set_rgb__type_support.cpp.o\x1b[0m\n'}
+[6.567808] (robot_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/set_rgb__type_support.cpp.o\x1b[0m\n'}
+[6.634087] (-) TimerEvent: {}
+[6.735367] (-) TimerEvent: {}
+[6.836650] (-) TimerEvent: {}
+[6.937845] (-) TimerEvent: {}
+[6.982768] (robot_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/srv/detail/dds_fastrtps/set_rgb__type_support.cpp.o\x1b[0m\n'}
+[7.038045] (-) TimerEvent: {}
+[7.138774] (-) TimerEvent: {}
+[7.235519] (robot_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[7.238924] (-) TimerEvent: {}
+[7.322438] (robot_interfaces) StdoutLine: {'line': b'[ 66%] Built target robot_interfaces__rosidl_typesupport_cpp\n'}
+[7.339128] (-) TimerEvent: {}
+[7.439852] (-) TimerEvent: {}
+[7.445475] (robot_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[7.495607] (robot_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[7.540047] (-) TimerEvent: {}
+[7.613161] (robot_interfaces) StdoutLine: {'line': b'[ 71%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[7.640231] (-) TimerEvent: {}
+[7.642428] (robot_interfaces) StdoutLine: {'line': b'[ 71%] Built target robot_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[7.740450] (-) TimerEvent: {}
+[7.841357] (-) TimerEvent: {}
+[7.896208] (robot_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.941536] (-) TimerEvent: {}
+[8.042257] (-) TimerEvent: {}
+[8.054254] (robot_interfaces) StdoutLine: {'line': b'[ 74%] Built target robot_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[8.104666] (robot_interfaces) StdoutLine: {'line': b'[ 74%] Built target robot_interfaces\n'}
+[8.142452] (-) TimerEvent: {}
+[8.155623] (robot_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[8.242636] (-) TimerEvent: {}
+[8.343407] (-) TimerEvent: {}
+[8.444165] (-) TimerEvent: {}
+[8.544921] (-) TimerEvent: {}
+[8.645703] (-) TimerEvent: {}
+[8.746426] (-) TimerEvent: {}
+[8.847115] (-) TimerEvent: {}
+[8.947762] (-) TimerEvent: {}
+[9.048441] (-) TimerEvent: {}
+[9.149205] (-) TimerEvent: {}
+[9.154837] (robot_interfaces) StdoutLine: {'line': b'[ 76%] Built target robot_interfaces__py\n'}
+[9.199603] (robot_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_supersonic_s.c.o\x1b[0m\n'}
+[9.200092] (robot_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/srv/_set_rgb_s.c.o\x1b[0m\n'}
+[9.249381] (-) TimerEvent: {}
+[9.350064] (-) TimerEvent: {}
+[9.450764] (-) TimerEvent: {}
+[9.475352] (robot_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/librobot_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[9.550967] (-) TimerEvent: {}
+[9.564721] (robot_interfaces) StdoutLine: {'line': b'[ 84%] Built target robot_interfaces__rosidl_generator_py\n'}
+[9.609049] (robot_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[9.609611] (robot_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[9.609866] (robot_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[9.651151] (-) TimerEvent: {}
+[9.751851] (-) TimerEvent: {}
+[9.841164] (robot_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[9.841667] (robot_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[9.844244] (robot_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[9.852028] (-) TimerEvent: {}
+[9.929381] (robot_interfaces) StdoutLine: {'line': b'[100%] Built target robot_interfaces__rosidl_typesupport_c__pyext\n'}
+[9.930006] (robot_interfaces) StdoutLine: {'line': b'[100%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[9.930314] (robot_interfaces) StdoutLine: {'line': b'[100%] Built target robot_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[9.952217] (-) TimerEvent: {}
+[9.960991] (robot_interfaces) CommandEnded: {'returncode': 0}
+[9.964173] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'install'}
+[9.989817] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces'], 'cwd': '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'dxf'), ('SSH_CLIENT', '192.168.0.208 59624 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dxf'), ('OLDPWD', '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c375eb70-710d-4062-8682-38344b9d6dbb.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dxf'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/dxf/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9fa59a3d78.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/build/robot_interfaces'), ('SSH_CONNECTION', '192.168.0.208 59624 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.012968] (robot_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.013646] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/robot_interfaces\n'}
+[10.014514] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[10.014914] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[10.015189] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/supersonic.h\n'}
+[10.015438] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.015687] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[10.015926] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/supersonic__functions.h\n'}
+[10.016221] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/supersonic__functions.c\n'}
+[10.017043] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/supersonic__type_support.h\n'}
+[10.017387] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/supersonic__struct.h\n'}
+[10.017637] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[10.017850] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[10.018047] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_rgb__struct.h\n'}
+[10.018285] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_rgb__functions.h\n'}
+[10.018809] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_rgb__functions.c\n'}
+[10.019480] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_rgb__type_support.h\n'}
+[10.019737] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/set_rgb.h\n'}
+[10.020286] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/environment/library_path.sh\n'}
+[10.020932] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/environment/library_path.dsv\n'}
+[10.021540] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so\n'}
+[10.022387] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so" to ""\n'}
+[10.022638] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[10.022925] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[10.023163] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.023385] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[10.023619] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/supersonic__rosidl_typesupport_fastrtps_c.h\n'}
+[10.023780] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[10.023966] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[10.024126] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_rgb__rosidl_typesupport_fastrtps_c.h\n'}
+[10.024279] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[10.024880] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.025129] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[10.025360] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[10.025515] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[10.025679] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/supersonic__type_support.c\n'}
+[10.025922] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/supersonic__rosidl_typesupport_introspection_c.h\n'}
+[10.026082] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.026305] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[10.026512] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[10.026708] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_rgb__type_support.c\n'}
+[10.026862] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_rgb__rosidl_typesupport_introspection_c.h\n'}
+[10.027076] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[10.027794] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.028003] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so\n'}
+[10.028949] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[10.029143] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[10.029352] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[10.029498] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[10.029701] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/supersonic.hpp\n'}
+[10.029931] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[10.030111] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/supersonic__builder.hpp\n'}
+[10.030367] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/supersonic__struct.hpp\n'}
+[10.030660] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/supersonic__type_support.hpp\n'}
+[10.031146] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/supersonic__traits.hpp\n'}
+[10.031418] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[10.031659] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[10.031823] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_rgb__builder.hpp\n'}
+[10.032016] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_rgb__struct.hpp\n'}
+[10.032227] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_rgb__type_support.hpp\n'}
+[10.032445] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_rgb__traits.hpp\n'}
+[10.032913] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/set_rgb.hpp\n'}
+[10.033216] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[10.033486] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[10.033650] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.033886] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[10.034119] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/dds_fastrtps\n'}
+[10.034312] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/supersonic__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.034533] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[10.034724] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[10.034874] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/dds_fastrtps\n'}
+[10.035055] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_rgb__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.035210] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.035897] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[10.036209] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[10.036499] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[10.036698] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[10.036863] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/supersonic__type_support.cpp\n'}
+[10.037099] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/supersonic__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.037314] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[10.037498] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[10.037693] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_rgb__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.037844] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_rgb__type_support.cpp\n'}
+[10.038033] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[10.038793] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[10.038992] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so\n'}
+[10.039627] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[10.039810] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.sh\n'}
+[10.040251] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.dsv\n'}
+[10.040764] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info\n'}
+[10.041165] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[10.041420] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[10.041709] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[10.041969] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[10.042255] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces\n'}
+[10.042463] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/librobot_interfaces__rosidl_generator_py.so\n'}
+[10.042798] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py\n'}
+[10.043040] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[10.043375] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[10.043683] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[10.043934] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg\n'}
+[10.044152] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py\n'}
+[10.044391] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_supersonic_s.c\n'}
+[10.044798] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_supersonic.py\n'}
+[10.045074] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[10.045389] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[10.045662] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv\n'}
+[10.045857] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_set_rgb_s.c\n'}
+[10.046117] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_set_rgb.py\n'}
+[10.046424] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/__init__.py\n'}
+[10.046712] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[10.052292] (-) TimerEvent: {}
+[10.124820] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces'...\n"}
+[10.125548] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py'...\n"}
+[10.125853] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg'...\n"}
+[10.126117] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py'...\n"}
+[10.126368] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_supersonic.py'...\n"}
+[10.126610] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv'...\n"}
+[10.126844] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/__init__.py'...\n"}
+[10.127072] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_set_rgb.py'...\n"}
+[10.137638] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[10.138377] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[10.138806] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[10.139492] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[10.139904] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[10.140560] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[10.140897] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so\n'}
+[10.141543] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so" to ""\n'}
+[10.141867] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/msg/Supersonic.idl\n'}
+[10.142246] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/srv/SetRgb.idl\n'}
+[10.142567] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/msg/Supersonic.msg\n'}
+[10.142880] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/srv/SetRgb.srv\n'}
+[10.143225] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/srv/SetRgb_Request.msg\n'}
+[10.144062] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/srv/SetRgb_Response.msg\n'}
+[10.145015] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/ament_index/resource_index/package_run_dependencies/robot_interfaces\n'}
+[10.146075] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/ament_index/resource_index/parent_prefix_path/robot_interfaces\n'}
+[10.147832] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.sh\n'}
+[10.148654] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.dsv\n'}
+[10.149331] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/environment/path.sh\n'}
+[10.150027] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/environment/path.dsv\n'}
+[10.150622] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/local_setup.bash\n'}
+[10.151154] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/local_setup.sh\n'}
+[10.151727] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/local_setup.zsh\n'}
+[10.152242] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/local_setup.dsv\n'}
+[10.152511] (-) TimerEvent: {}
+[10.152927] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/package.dsv\n'}
+[10.153286] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/ament_index/resource_index/packages/robot_interfaces\n'}
+[10.153686] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport.cmake\n'}
+[10.154071] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[10.154504] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[10.154937] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[10.155472] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[10.156054] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[10.156730] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[10.157453] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[10.157896] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cppExport.cmake\n'}
+[10.158307] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[10.158794] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[10.159159] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[10.159735] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[10.160117] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[10.160801] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[10.161334] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport.cmake\n'}
+[10.161898] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[10.162315] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[10.162692] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.163111] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.163649] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.164159] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.164632] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[10.165117] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[10.165654] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig.cmake\n'}
+[10.166221] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig-version.cmake\n'}
+[10.166571] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces/install/robot_interfaces/share/robot_interfaces/package.xml\n'}
+[10.173677] (robot_interfaces) CommandEnded: {'returncode': 0}
+[10.251761] (robot_interfaces) JobEnded: {'identifier': 'robot_interfaces', 'rc': 0}
+[10.253623] (-) TimerEvent: {}
+[10.253867] (-) EventReactorShutdown: {}

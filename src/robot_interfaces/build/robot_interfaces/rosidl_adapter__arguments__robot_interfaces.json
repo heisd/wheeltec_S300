@@ -1,0 +1,7 @@
+{
+  "package_name": "robot_interfaces",
+  "non_idl_tuples": [
+    "/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces:msg/Supersonic.msg",
+    "/home/dxf/WHEELTEC_S300Pro_mini_ros2_robot_src_2025_9_15/src/robot_interfaces:srv/SetRgb.srv"
+  ]
+}

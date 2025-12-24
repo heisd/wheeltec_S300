@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robot_interfaces/srv/SetRgb.srv
+// generated code does not contain a copyright notice
+
+
+module robot_interfaces {
+  module srv {
+    struct SetRgb_Request {
+      boolean en;
+
+      uint8 r;
+
+      uint8 g;
+
+      uint8 b;
+    };
+    struct SetRgb_Response {
+      string res;
+    };
+  };
+};

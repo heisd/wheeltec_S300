@@ -1,0 +1,6 @@
+msg/Supersonic.idl
+msg/Supersonic.msg
+srv/SetRgb.idl
+srv/SetRgb.srv
+srv/SetRgb_Request.msg
+srv/SetRgb_Response.msg
