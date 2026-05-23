@@ -189,15 +189,85 @@ camera 驱动 ──► /camera/color/image_raw ──► line_follow 节点
 
 ---
 
-## 六、文件位置速查
+## 六、安全防护：`safety_guard` 节点
+
+巡线节点本身是"盲发 cmd_vel"的，不感知障碍。`line_follower.launch.py` 现在
+默认会同时启动一个 `safety_guard` 节点，在巡线节点和底盘之间做双重保护。
+
+### 6.1 数据流
+
+```
+line_follow.py ──► /cmd_vel_raw ──► safety_guard ──► /cmd_vel ──► wheeltec_robot_node
+                                       ▲      ▲
+                              /Distance┘      └/imu/data_raw
+```
+
+- 巡线节点通过参数 `cmd_vel_topic` 把速度发到 `/cmd_vel_raw`（launch 里默认改为该话题）。
+- `safety_guard` 订阅原始速度、超声波、IMU，仲裁后输出最终 `/cmd_vel`。
+
+### 6.2 两层保护
+
+1. **超声波前置减速 / 停车**（事前预防）
+   - 从 `/Distance` 取前向若干路（默认 `B/C/D/E`）的最小有效距离 `d`。
+   - `d > slow_distance`：放行原速度。
+   - `stop_distance < d ≤ slow_distance`：按 `(d - stop)/(slow - stop)` 线性衰减线速度。
+   - `d ≤ stop_distance`：线速度强制为 0；**角速度仍放行**，便于小车原地转开。
+
+2. **IMU 加速度突变（碰撞兜底）**
+   - 对 `imu/data_raw` 的 `linear_acceleration.x` 做低通得到基线 `baseline`。
+   - 当满足全部条件时判为碰撞：
+     - `|ax - baseline| > accel_spike_threshold`
+     - 当前命令是前进（`cmd_vel.linear.x > min_cmd_for_collision`）
+     - 最近收到过 cmd（避免静止状态被推一下误触发）
+   - 进入 `COLLIDED_RECOVERY` 状态：先短暂后退 `backup_duration` 秒，再保持
+     零速度直到 `recovery_duration` 结束，然后恢复正常。
+
+### 6.3 状态机
+
+`NORMAL → SLOWING → STOPPED_OBSTACLE → COLLIDED_RECOVERY → NORMAL`，
+通过 `/safety_status`（`std_msgs/String`）打印当前状态、最小前向距离、加速度基线，方便调试：
+
+```bash
+ros2 topic echo /safety_status
+```
+
+### 6.4 主要参数（在 `line_follower.launch.py` 中修改）
+
+| 参数 | 默认 | 含义 |
+| --- | --- | --- |
+| `stop_distance` | 0.25 m | 触发停车的前向距离 |
+| `slow_distance` | 0.60 m | 开始减速的前向距离 |
+| `min_valid_distance` | 0.05 m | 低于此值视为传感器无读数（忽略） |
+| `front_sonars` | `['B','C','D','E']` | 用作前向检测的超声波路号；s300_mini 建议用 `['B','C','D']` |
+| `accel_spike_threshold` | 6.0 m/s² | 加速度偏离基线超过该值触发碰撞 |
+| `accel_baseline_alpha` | 0.02 | 加速度基线低通系数（越小越"稳"） |
+| `min_cmd_for_collision` | 0.05 m/s | 只在命令前进时检测碰撞 |
+| `recovery_duration` | 1.5 s | 碰撞恢复总时长 |
+| `backup_duration` | 0.4 s | 恢复期前段后退时长 |
+| `backup_speed` | 0.05 m/s | 后退线速度 |
+| `cmd_timeout` | 0.5 s | `cmd_vel_raw` 超时不再放行（防止失联后惯性跑） |
+
+### 6.5 调阈值的小建议
+
+- 平地巡线时 `linear_acceleration.x` 波动一般不超过 1~2 m/s²。
+- 用 `ros2 bag record /imu/data_raw /odom /cmd_vel /safety_status` 录一段
+  正常运行和一次轻微碰撞，对比 `ax - baseline` 的幅值，把
+  `accel_spike_threshold` 设在两者之间一般足够稳。
+- 想关掉 IMU 兜底，把 `accel_spike_threshold` 设很大即可（如 1e6）。
+- 想关掉超声波保护，把 `front_sonars` 设为空 `[]` 即可。
+
+---
+
+## 七、文件位置速查
 
 ```
 simple_follower_ros2/
 ├── launch/
-│   └── line_follower.launch.py        # 巡线启动脚本
+│   └── line_follower.launch.py        # 巡线 + 安全防护启动脚本
 ├── simple_follower_ros2/
 │   ├── line_follow.py                 # 巡线核心节点
+│   ├── safety_guard.py                # 超声波 + IMU 碰撞防护节点
 │   └── adjust_hsv.py                  # HSV 阈值标定工具
-├── setup.py                           # 注册 line_follow 可执行入口
+├── setup.py                           # 注册可执行入口（line_follow / safety_guard ...）
 └── README.md                          # 本说明文档
 ```

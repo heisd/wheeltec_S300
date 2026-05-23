@@ -24,11 +24,32 @@ def generate_launch_description():
     )
     return LaunchDescription([
         wheeltec_robot,wheeltec_camera,
-  
+
         launch_ros.actions.Node(
-            package='simple_follower_ros2', 
-            executable='line_follow', 
+            package='simple_follower_ros2',
+            executable='line_follow',
             name='line_follow',
-            )]
+            parameters=[{'cmd_vel_topic': 'cmd_vel_raw'}],
+            ),
+        launch_ros.actions.Node(
+            package='simple_follower_ros2',
+            executable='safety_guard',
+            name='safety_guard',
+            output='screen',
+            parameters=[{
+                'stop_distance': 0.25,
+                'slow_distance': 0.60,
+                'min_valid_distance': 0.05,
+                'front_sonars': ['B', 'C', 'D', 'E'],
+                'accel_spike_threshold': 6.0,
+                'accel_baseline_alpha': 0.02,
+                'min_cmd_for_collision': 0.05,
+                'recovery_duration': 1.5,
+                'backup_duration': 0.4,
+                'backup_speed': 0.05,
+                'cmd_timeout': 0.5,
+            }],
+            ),
+        ]
     )
 

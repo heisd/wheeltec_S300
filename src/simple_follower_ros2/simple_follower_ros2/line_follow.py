@@ -30,12 +30,14 @@ class Follower(Node):
         self.bridge = cv_bridge.CvBridge()
         qos = QoSProfile(depth=10)
         self.mat = None
+        self.declare_parameter('cmd_vel_topic', 'cmd_vel')
+        cmd_vel_topic = self.get_parameter('cmd_vel_topic').value
         self.image_sub = self.create_subscription(
             Image,
             '/camera/color/image_raw',
             self.image_callback,
             qos)
-        self.cmd_vel_pub = self.create_publisher(Twist, 'cmd_vel', qos)
+        self.cmd_vel_pub = self.create_publisher(Twist, cmd_vel_topic, qos)
         self.twist = Twist()
         self.tmp = 0
 
