@@ -27,6 +27,7 @@ setup(
     entry_points={
         'console_scripts': [
             'line_follow = simple_follower_ros2.line_follow:main',
+            'safety_guard = simple_follower_ros2.safety_guard:main',
             'laserfollower = simple_follower_ros2.laserfollower:main',
             'visualtracker = simple_follower_ros2.visualTracker:main',
             'visualfollow = simple_follower_ros2.visualFollower:main',
