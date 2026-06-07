@@ -43,6 +43,7 @@ STATE_FOLLOW = 'FOLLOW'
 STATE_DECEL = 'DECELERATING'
 STATE_STOPPED = 'STOPPED'
 STATE_TURNING = 'TURNING'
+STATE_HALT = 'HALT'
 
 
 def parse_action(data):
@@ -80,7 +81,8 @@ class CmdArbiter(Node):
         self.declare_parameter('enable_path_action', True)  # 是否执行左右转/直行动作
         self.declare_parameter('turn_angular_speed', 0.4)   # 原地转向角速度(rad/s)
         self.declare_parameter('turn_min_time', 1.0)        # 盲转时间, 先离开路口再找线(s)
-        self.declare_parameter('turn_max_time', 8.0)        # 转向安全超时(s)
+        self.declare_parameter('turn_max_time', 0.0)        # 寻线转角安全超时(s), <=0 表示一直转
+        self.declare_parameter('stop_on_redetect', True)    # 转向中再次扫到同一码则停车
         self.declare_parameter('line_found_eps', 0.005)     # 判定"发现线"的 linear.x 阈值
         self.declare_parameter('line_confirm', 3)           # 连续多少帧发现线才确认
         self.declare_parameter('use_odom_turn', True)       # 固定转角是否用里程计闭环
@@ -98,6 +100,7 @@ class CmdArbiter(Node):
         self.turn_angular_speed = g('turn_angular_speed').value
         self.turn_min_time = g('turn_min_time').value
         self.turn_max_time = g('turn_max_time').value
+        self.stop_on_redetect = g('stop_on_redetect').value
         self.line_found_eps = g('line_found_eps').value
         self.line_confirm = g('line_confirm').value
         self.use_odom_turn = g('use_odom_turn').value
@@ -142,6 +145,8 @@ class CmdArbiter(Node):
         self.turn_use_odom = False        # 本次固定转角是否用里程计闭环
         self.turn_accum = 0.0             # 已累计转过的弧度(里程计)
         self.turn_prev_yaw = 0.0          # 上一次 yaw, 用于累计
+        self.turn_qr_data = ''            # 触发本次转向的二维码内容
+        self.turn_qr_cleared = False      # 转向中该二维码是否已离开过视野
         self.line_hits = 0
 
         # 里程计
@@ -232,6 +237,9 @@ class CmdArbiter(Node):
         self.turn_start_time = self.now()
         self.turn_dir = 1.0 if direction == 'left' else -1.0
         self.line_hits = 0
+        # 记录触发本次转向的二维码, 用于"再次扫到即停"
+        self.turn_qr_data = self.last_qr_data
+        self.turn_qr_cleared = False
         if angle is not None and self.turn_angular_speed > 1e-3:
             # 固定转角
             self.turn_fixed = True
@@ -262,6 +270,13 @@ class CmdArbiter(Node):
         # 动作完成后刷新冷却起点, 保证同一码在冷却期内不会被再次处理
         self.last_handled_time = self.now()
         self.get_logger().info('resume line following')
+
+    def enter_halt(self, reason):
+        self.state = STATE_HALT
+        # 记录冷却起点, 恢复后同一码不会立刻又触发
+        self.last_handled_data = self.last_qr_data
+        self.last_handled_time = self.now()
+        self.get_logger().info(f'HALT: stop ({reason}); remove QR to resume')
 
     # ------------------------------------------------------------------ loop
     def update(self):
@@ -310,6 +325,15 @@ class CmdArbiter(Node):
                     self.resume_follow()
 
         elif self.state == STATE_TURNING:
+            # 转向中再次扫到"同一张"二维码 -> 停车
+            # (需先离开过视野一次, 避免刚触发转向就被触发它的那张码立刻命中)
+            if not active:
+                self.turn_qr_cleared = True
+            elif self.stop_on_redetect and self.turn_qr_cleared \
+                    and self.last_qr_data == self.turn_qr_data:
+                self.enter_halt(f'QR "{self.turn_qr_data}" scanned again during turn')
+                return
+
             turn = Twist()
             turn.angular.z = self.turn_dir * self.turn_angular_speed
             self.publish(turn)
@@ -359,11 +383,19 @@ class CmdArbiter(Node):
                     self.line_hits = 0
                 if self.line_hits >= self.line_confirm:
                     self.get_logger().info(
-                        f'seek turn done: line re-found after {elapsed:.1f}s')
+                        f'seek turn done: line re-found after {elapsed:.1f}s -> go')
                     self.resume_follow()
                     return
-            if elapsed >= self.turn_max_time:
-                self.get_logger().warn('turn timeout, resume line following anyway')
+            # turn_max_time<=0: 一直转直到发现线或再次扫码; >0 时超时则停车(不盲目恢复)
+            if self.turn_max_time > 0 and elapsed >= self.turn_max_time:
+                self.enter_halt(f'seek timeout after {elapsed:.1f}s')
+
+        elif self.state == STATE_HALT:
+            self.publish(Twist())  # 保持停车
+            # 二维码移开足够久 -> 自动恢复巡线
+            if self.resume_after_clear and not active and \
+                    (self.now() - self.qr_last_true) >= self.clear_hold:
+                self.get_logger().info('HALT cleared (QR removed), resume line following')
                 self.resume_follow()
 
 

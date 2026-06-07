@@ -139,7 +139,7 @@ pip3 install pyzbar
 **`cmd_arbiter`** — 速度仲裁器(优先级 MUX)+ 二维码路径动作:
 - 正常时透传 `line_follow/cmd_vel` → `cmd_vel`(巡线)
 - 一旦检测到二维码立即进入更高优先级流程:`FOLLOW → DECELERATING(先减速)→ STOPPED(后停下)`,期间忽略巡线指令
-- 停稳后按二维码内容执行动作(状态机增加 `TURNING`):
+- 停稳后按二维码内容执行动作(状态机:`FOLLOW / DECELERATING / STOPPED / TURNING / HALT`):
 
 | 二维码内容(命中关键字即可) | 动作 |
 | --- | --- |
@@ -155,11 +155,15 @@ pip3 install pyzbar
 >
 > **同一二维码冷却**:同一**内容**的二维码在 `same_qr_cooldown` 秒(默认 `5.0`)内只会触发一次动作,避免靠近/经过同一张码时被反复识别;不同内容的二维码不受影响。
 
-> "重新发现线" 的判据复用巡线节点:`line_follow` 看到线时 `linear.x>0`,丢线时为 `0`,所以**无需改动巡线节点**即可知道线是否重新出现。左/右转会先"盲转" `turn_min_time` 秒离开路口,再开始找线,避免在路口原地旧线上误判;并有 `turn_max_time` 安全超时。处理完一张码后会"解除武装",必须等该码彻底离开才允许再次触发,避免对同一张码反复触发。
+> "重新发现线" 的判据复用巡线节点:`line_follow` 看到线时 `linear.x>0`,丢线时为 `0`,所以**无需改动巡线节点**即可知道线是否重新出现。左/右转会先"盲转" `turn_min_time` 秒离开路口,再开始找线,避免在路口原地旧线上误判。处理完一张码后会"解除武装",必须等该码彻底离开才允许再次触发,避免对同一张码反复触发。
+>
+> **寻线转角(`path:left`/`path:right` 不带角度)= 找到线才走**:原地一直转寻找新线,**只有连续 `line_confirm` 帧发现线才恢复巡线(前进)**;`turn_max_time<=0`(默认)表示一直转不放弃,`>0` 则超时后停车(`HALT`)而非盲目前进。
+>
+> **转向中再次扫到同一二维码 → 停车(`HALT`)**:`stop_on_redetect=True` 时,转向过程中若该二维码先离开视野、随后再次被扫到,小车立即停车(状态 `HALT`);把二维码移开 `clear_hold` 秒后自动恢复巡线。可作为"原地打转找不到线"时的手动急停/恢复手段。
 
 参数:
 - 减速/停车:`decel_duration`(默认 `1.2`s)、`publish_rate`(默认 `20`Hz)、`detect_timeout`(默认 `0.5`s)、`clear_hold`(默认 `1.0`s)、`resume_after_clear`(默认 `True`)、`stop_dwell`(停稳停留,默认 `0.5`s)、`same_qr_cooldown`(同一码冷却,默认 `5.0`s)
-- 路径动作:`enable_path_action`(默认 `True`)、`turn_angular_speed`(默认 `0.4` rad/s)、`turn_min_time`(默认 `1.0`s)、`turn_max_time`(默认 `8.0`s)、`line_found_eps`(默认 `0.005`)、`line_confirm`(默认 `3` 帧)
+- 路径动作:`enable_path_action`(默认 `True`)、`turn_angular_speed`(默认 `0.4` rad/s)、`turn_min_time`(默认 `1.0`s)、`turn_max_time`(寻线转角超时,默认 `0`=一直转)、`stop_on_redetect`(默认 `True`)、`line_found_eps`(默认 `0.005`)、`line_confirm`(默认 `3` 帧)
 - 固定转角闭环:`use_odom_turn`(默认 `True`)、`odom_topic`(默认 `/odom`)
 
 ### `qr_make`(二维码生成工具)

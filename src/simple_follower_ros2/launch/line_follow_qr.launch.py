@@ -61,7 +61,8 @@ def generate_launch_description():
             'enable_path_action': True,
             'turn_angular_speed': 0.4,
             'turn_min_time': 1.0,
-            'turn_max_time': 8.0,
+            'turn_max_time': 0.0,          # 寻线转角: 一直转直到发现线或再次扫码
+            'stop_on_redetect': True,      # 转向中再次扫到同一码 -> 停车
             'line_found_eps': 0.005,
             'line_confirm': 3,
             'use_odom_turn': True,
